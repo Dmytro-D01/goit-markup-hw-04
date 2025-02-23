@@ -323,7 +323,8 @@ width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-info {
-        padding: 32px 0;
+      
+        
 }
 
 .team-name {
@@ -334,12 +335,62 @@ width: calc((100% - 3 * 24px) / 4);
          line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-top: 32px;
 }
 
 .team-role {
         text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
 }
 
+.team-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+}
+
+.team-icons-list {
+        display: flex;
+        justify-content: center;
+        column-gap: 24px;
+        margin-top: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 32px;
+}
+
+.team-icons {
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: #4d5ae5;
+        gap: 24px;
+}
+
+.team-icons:hover, .team-icons:focus {
+        background-color: #31D0AA;
+}
+
+.team-icons:hover .team-social-icon,
+.team-icons:focus .team-social-icon {
+        fill: #31D0AA;
+}
+
+.team-social-icon
+
+.team-icon {}
+
+.instagram {
+        fill:transparent;
+        stroke: white;
+}
 /* portfolio */
 .portfolio { 
         background-color: #FFFFFF;
@@ -487,4 +538,23 @@ width: calc((100% - 48px) / 3);
                 letter-spacing: 0.02em;
                 color: #f4f4fd;
                 max-width: 264px;
+}
+
+.footer-social-media {
+        margin-top: -100px;
+}
+
+.footer-social-media-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+}
+
+.footer-list {
+        padding-top: 16px;
 }
