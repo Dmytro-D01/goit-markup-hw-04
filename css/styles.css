@@ -392,8 +392,7 @@ button {
 .team-social-icon {
         width: 16px;
         height: 16px;
-        fill: transparent;
-        stroke: var(--icon-color, #f4f4fd);
+        fill: #f4f4fd
 }
 
 .team-icon {
@@ -560,6 +559,7 @@ width: calc((100% - 48px) / 3);
 .footer-social {
         display: flex;
         flex-direction: column;
+        margin-right: 120px
 }
 
 .footer-social-title {
