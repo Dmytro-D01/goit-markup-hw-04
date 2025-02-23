@@ -163,8 +163,6 @@ button {
 /* hero */
 .hero-section { 
         background-color :#2e2f42;
-        height: 600px;
-        display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -174,6 +172,7 @@ button {
         background-size: cover;
         background-position: center;
         max-width: 1440px;
+        margin: auto;
 }
 
 .container-hero {
@@ -354,13 +353,13 @@ button {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        margin-bottom: 8px;
 }
 
 .team-icons-list {
         display: flex;
         justify-content: center;
         gap: 24px;
-        padding-top: 32px;
 }
 
 .team-icons {
@@ -390,14 +389,13 @@ button {
 }
 
 .team-social-icon {
-        width: 16px;
-        height: 16px;
+        width: 40px;
+        height: 40px;
         fill: #f4f4fd
 }
 
 .team-icon {
-        fill: transparent;
-        stroke: var(--icon-color, #f4f4fd);
+        fill: #f4f4fd;
         width: 16px;
         height: 16px;
 }
@@ -503,7 +501,6 @@ width: calc((100% - 48px) / 3);
         overflow: hidden;
         padding: 40px 32px;
         transform: translateY(100%);
-        opacity: 0;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         font-weight: 400;
         font-size: 16px;
@@ -525,7 +522,6 @@ width: calc((100% - 48px) / 3);
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
-        gap: 40px;
 }
 
 .footer-content {
@@ -604,4 +600,6 @@ width: calc((100% - 48px) / 3);
 
 .footer-social-icon {
         fill: var(--icon-color, #f4f4fd);
+        width: 40px;
+        height: 40px;
 }
