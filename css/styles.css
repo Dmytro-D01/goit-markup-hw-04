@@ -321,19 +321,16 @@ button {
         justify-content: center;
 }
 
-.team-list:first-child {
-width: calc((100% - 3 * 24px) / 4);
-box-shadow: 
-        0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-        border-radius: 0px 0px 4px 4px;
-}
-
-.team-item { 
+.team-item {
         border-radius: 0px 0px 4px 4px;
         width: calc((100% - 3 * 24px) / 4);
         background-color: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-item:first-child {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
 }
 
 .team-info {
@@ -345,7 +342,7 @@ box-shadow:
         margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
-         line-height: 1.2;
+        line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
 }
@@ -363,16 +360,17 @@ box-shadow:
         display: flex;
         justify-content: center;
         gap: 24px;
+        padding-top: 32px;
 }
 
 .team-icons {
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
         background-color: var(--primary-color, #4d5ae5);
-        width: 100%;
-        height: 100%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -381,19 +379,26 @@ box-shadow:
         height: 40px;
 }
 
-.team-icons:hover, .team-icons:focus {
+.team-icons:hover,
+.team-icons:focus {
         background-color: #404bbf
 }
 
 .team-icons:hover .team-social-icon,
 .team-icons:focus .team-social-icon {
-        fill: #ffffff;
+        stroke: #ffffff;
 }
 
-.team-social-icon
+.team-social-icon {
+        width: 16px;
+        height: 16px;
+        fill: transparent;
+        stroke: var(--icon-color, #f4f4fd);
+}
 
 .team-icon {
-        fill: var(--icon-color, #f4f4fd);
+        fill: transparent;
+        stroke: var(--icon-color, #f4f4fd);
         width: 16px;
         height: 16px;
 }
